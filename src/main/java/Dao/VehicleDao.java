@@ -40,7 +40,7 @@ public class VehicleDao {
 //                    actors.add(actor);
 //                }
 //        }
-            try (ResultSet rs = statement.executeQuery()) {
+            try (ResultSet rs = statement.executeQuery()) { // code give from nazik end of friday
                 while (rs.next()) {
                     vehicles.add(mapRowToVehicle(rs));
                 }
